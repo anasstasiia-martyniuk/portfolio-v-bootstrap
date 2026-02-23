@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg-black mx-auto font-monospace text-light">
+    
+    <!-- #region Nav -->
+    <nav class="navbar navbar-dark sticky-top navbar-expand-lg justify-content-around px-3" id="nav">
+        <div class="container-md justify-content-between border border-1 rounded-5 bg-black bg-opacity-50 bg-blur px-4">
+            <div class=" d-flex f-row align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-hot"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6zM13 12.5a2 2 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5M2.64 13.825 1.123 7h11.754l-1.517 6.825A1.5 1.5 0 0 1 9.896 15H4.104a1.5 1.5 0 0 1-1.464-1.175" />
+                    <path
+                        d="m4.4.8-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 3.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 6.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 9.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8" />
+                </svg>
+                <a class="navbar-brand fw-bold text-light ms-3 text-lowercase" href="#" aria-current="page" >My Portfolio</a>
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                <ul class="navbar-nav nav nav-underline mb-2 mb-lg-0 gap-2 text-lowercase">
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium text-light" href="#about-me">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium text-light" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium text-light" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium text-light" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #endregion Nav -->
+
+    <div data-bs-spy="scroll" data-bs-target="#nav" data-bs-smooth-scroll="true" tabindex="0">
+
+            <!-- #region Hero/About Me -->
+            <section id="about-me">
+                <div class="container-lg d-grid">
+                    <div class="row row-cols-1 row-cols-lg-2 py-5">
+                        <div class="column">
+
+                        </div>
+                        <div class="column">
+                            <h1>HEEEEEEEEEEEeelloooo</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                    </div>
+                </div>
+            </section>
+            <!-- #endregion Hero/About Me -->
+            
+            <!-- #region Skills -->
+            <section id="skills">
+                <div class="container-lg d-grid">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                        <div class="column"></div>
+                        <div class="column"></div>
+                        <div class="column"></div>
+                        <div class="column"></div>
+                        <div class="column"></div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <div class="column"></div>
+                        <div class="column px-0">
+                            <div>
+                                <img src="./images/skills/skills-graph.png" class="w-100 pe-4">
+                            </div>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-black text-light border-bottom border-light" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Evidence №1
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse bg-black" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body text-light d-grid">
+                                            <div class="row row-cols-1 row-cols-sm-2">
+                                                <div class="column"><strong >Course: Fullstack Developer</strong> <br> Date of receipt: 28/05/2025</div>
+                                                <div class="column">
+                                                    <img src="./images/projects/project-2.png" class="w-100">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-black text-light border-bottom border-light" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Evidence №2
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body bg-black text-light d-grid">
+                                            <div class="row row-cols-1 row-cols-sm-2">
+                                                <div class="column mb-3"><strong>Course: Fullstack Developer</strong> <br> Date of receipt: 28/05/2025 <br><br>
+                                                    <em class="text-secondary">Note: Yea, it's the same course. The React part was counted as "attended" instead of "passed." But it's still
+                                                    the knowledge that matters, not the certificate, right?</em>
+                                                </div>
+                                                <div class="column">
+                                                    <img src="./images/projects/project-2.png" class="w-100">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-black text-light border-bottom border-light" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Evidence №3
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body bg-black text-light">Maybe one day there will be an mbo diploma here
+                                        (I hope)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- #endregion Skills -->
+            
+            <!-- #region Projects -->
+            <section id="projects">
+                <div class="container-fluid d-grid my-5">
+                    <p class="text-lowercase opacity-25 fs-6 text-end mb-3 text-secondary">*hover over the image to see more*</p>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">  
+                        <div class="col gap-3 d-flex flex-column justify-content-md-end justify-content-lg-start">
+                            <a href="https://github.com/ArtemSuleymanov/final-byte-frontend" target="_blank"
+                                class="position-relative">
+                                <img class="img-hover d-block w-100" src="/images/projects/project-1.png" />
+                                <div
+                                    class="position-absolute bottom-0 start-0 w-100 text-light fw-bold text-center text-uppercase text-hover">
+                                    <h4 class="mb-0">Money Guard</h4>
+                                    <p>Team Project / React & Node.js</p>
+                                </div>
+                            </a>
+                            <a href="https://github.com/Bohdan-Potopliak/free-azov" target="_blank" class="position-relative">
+                                <img class="img-hover d-block w-100" src="/images/projects/project-2.png" />
+                                <div
+                                    class="position-absolute bottom-0 start-0 w-100 text-light fw-bold text-center text-uppercase text-hover">
+                                    <h4 class="mb-0">Portfolio</h4>
+                                    <p>Team Project / Html & css & js</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col gap-3 d-flex flex-column">
+                            <a href="https://github.com/maskaa22/perfect-developers" target="_blank" class="position-relative">
+                                <img class="img-hover d-block w-100" src="/images/projects/project-3.png" />
+                                <div
+                                    class="position-absolute bottom-0 start-0 w-100 text-black fw-bold text-center text-uppercase text-hover">
+                                    <h4 class="mb-0">Watchchar</h4>
+                                    <p>Team Project / Html & css </p>
+                                </div>
+                            </a>
+                            <a href="https://github.com/anasstasiia-martyniuk/goit-markup-hw-06" target="_blank"
+                                class="position-relative">
+                                <img class="img-hover d-block w-100" src="/images/projects/project-4.png" />
+                                <div
+                                    class="position-absolute bottom-0 start-0 w-100 text-black fw-bold text-center text-uppercase text-hover">
+                                    <h4 class="mb-0">Webstudio</h4>
+                                    <p>Personal Project / Html & css </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col gap-3 d-flex flex-column">
+                            <a href="https://github.com/ROCvanTwente/project-semester-1-tech-titans" target="_blank"
+                                class="position-relative">
+                                <img class="img-hover d-block w-100" src="/images/projects/project-5.png" />
+                                <div
+                                    class="position-absolute bottom-0 start-0 w-100 text-light fw-bold text-center text-uppercase text-hover">
+                                    <h4 class="mb-0">Roast & Toast</h4>
+                                    <p>Team Project / Html & css & js</p>
+                                </div>
+                            </a>
+                            <a href="https://github.com/anasstasiia-martyniuk/portfolio-2026" target="_blank"
+                                class="position-relative">
+                                <img class="img-hover d-block w-100" src="/images/projects/project-6.png" />
+                                <div
+                                    class="position-absolute bottom-0 start-0 w-100 text-light fw-bold text-center text-uppercase text-hover">
+                                    <h4 class="mb-0">Not finished portfolio</h4>
+                                    <p>Personal Project / Html & css & js</p>
+                                </div>
+                            </a>
+                            <p
+                                class="w-100 px-2 text-secondary pt-3 mb-0 text-end fs-6 text-uppercase d-none text-primary d-lg-block opacity-75 fw-semibold">
+                                "Only after I made a layout with photos did I realize that I didn't have enough finished projects to
+                                insert... So I had to
+                                add unfinished or very simple ones. But I will definitely change them to something better someday,
+                                and
+                                this text to a
+                                quote or whatever."
+                            </p>
+                        </div>
+                        <div class="col gap-3 d-flex flex-column">
+                            <p class="w-100 px-2 text-secondary mb-0 text-end fs-4 text-uppercase d-block d-lg-none opacity-75">
+                                "Only after I made a layout with photos did I realize that I didn't have enough finished projects to
+                                insert... So I
+                                had to
+                                add unfinished or very simple ones. But I will definitely change them to something better someday,
+                                and
+                                this text to
+                                a
+                                quote or whatever."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- #endregion Projects -->
+            
+            <!-- #region Contact -->
+            <!-- this part of code is simply haos -->
+            <section id="contact">
+                <div class="container-xl d-grid py-2 mb-5 py-md-3 ">
+                    <div class="row mb-md-5 mb-2 me-md-2 me-lg-5">
+                        <h2 class="text-uppercase mb-2 mt-4 fs-1 text-primary text-end">Contact me</h2>
+                        <p class="fs-4 lh-1 mb-4 text-end">anytime, anywhere, but not at 7 a.m. on Monday</p>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-2 g-md-5 mx-auto mx-md-0 px-lg-5">
+                        <div class="col d-grid mt-3 border border-1 border-light px-0 bg-dark">
+                                <div class="row d-flex flex-row bg-black bg-opacity-50 py-2 mx-0 justify-content-between border-bottom border-1 border-secondary border-opacity-75">
+                                    <div class="d-flex flex-row" style="width: fit-content;">
+                                        <div class="me-3"><svg width="26" height="26"><use href="./images/icons.svg#icon-vs-code"></use></svg></div>
+                                        <div><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                                            </svg></div>
+                                    </div>
+                                    <div style="width: fit-content;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="row g-0 bg-dark bg-opacity-75 px-0">
+                                    <div class="d-none col col-1 me-0 w-auto d-sm-flex flex-column px-2 py-3 justify-content-between gap-4 bg-black bg-opacity-50 border-end border-end-1 border-secondary border-opacity-75">
+                                        <div class="px-1 mb-3">
+                                            <div class="mb-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-file-earmark opacity-50" viewBox="0 0 16 16">
+                                                    <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z" />
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-three-dots opacity-50" viewBox="0 0 16 16">
+                                                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="mt-3 px-1">
+                                            <div class="mb-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-person-circle opacity-50" viewBox="0 0 16 16">
+                                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-gear opacity-50" viewBox="0 0 16 16">
+                                                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />
+                                                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z" />
+                                            </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col ms-0">
+                                        <ul class="nav nav-tabs bg-black bg-opacity-50 border-secondary" id="myTab" role="tablist">
+                                            <li class="nav-item border-end border-secondary border-opacity-75" role="presentation">
+                                                <button class="nav-link rounded-0 text-secondary active card-tab" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                                                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">card.html</button>
+                                            </li>
+                                            <li class="nav-item border-end border-secondary border-opacity-75 " role="presentation">
+                                                <button class="nav-link rounded-0 text-secondary card-tab" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                                                    type="button" role="tab" aria-controls="profile-tab-pane"
+                                                    aria-selected="false">card.css</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active pb-4 pb-md-0" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                                                tabindex="0">
+                                                <p class="ms-1 ms-sm-5 mt-2 mb-0 text-primary opacity-75"><span class="text-secondary">1</span> &ltcard&gt</p>
+                                                <p class="ms-1 ms-sm-5 mt-0 mb-0 text-primary opacity-75"><span class="text-secondary">2</span> &ltname&gt <span class="text-light">Anastasiia Martyniuk</span> &lt/name&gt</p>
+                                                <div class="d-flex flex-row">
+                                                    <p class="ms-1 ms-sm-5 mt-0 mb-0 text-secondary me-2">3</p> 
+                                                    <a href="tel:+31642751895" class="text-primary opacity-75 text-decoration-none" target="_blank">&lttel&gt<span class="text-light"> +31 6 24 75 18 95 </span>&lt/tel&gt</a>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <p class="ms-1 ms-sm-5 mt-0 mb-0 text-secondary me-2">4</p>
+                                                    <a href="mailto:anass.tttazja@gmail.com" class="text-primary opacity-75 text-decoration-none" target="_blank">&ltemail&gt<span class="text-light"> anass.tttazja@gmail.com </span>&lt/email&gt</a>
+                                                </div>
+                                                <p class="ms-1 ms-sm-5 mb-0 text-primary opacity-75"><span class="text-secondary">5</span> &lt/card&gt</p>
+                                            </div>
+                                            <div class="tab-pane fade show" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                                                tabindex="0">
+                                                <p class="ms-1 ms-sm-5 mt-2 mb-0 text-warning opacity-75"><span class="text-secondary">1</span> card &lcub; </p>
+                                                <p class="ms-1 ms-sm-5 mb-0 text-info opacity-75"><span class="text-secondary me-4">2</span> quality-of-work: <span class="text-light">100%;</span></p>
+                                                <p class="ms-1 ms-sm-5 mb-0 text-info opacity-75"><span class="text-secondary me-4">3</span> speed-of-work: <span class="text-light">100%;</span></p>
+                                                <p class="ms-1 ms-sm-5 mb-0 text-info opacity-75"><span class="text-secondary me-4">4</span> creativity-of-work: <span class="text-light">100%;</span></p>
+                                                <p class="ms-1 ms-sm-5 mb-0 text-warning opacity-75"><span class="text-secondary">5</span> &rcub; </p>
+                                                <p class="ms-1 ms-sm-5 mb-0 opacity-75 text-secondary">6 /* jk, but I still try to do my best */</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col mt-4">
+                            <form class="d-flex flex-column gap-3" id="contact-form">
+                                <div>
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input type="email" id="email" name="email" placeholder="email@example.com"
+                                        class="bg-transparent form-control w-100 text-light rounded-0" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="comment" class="form-label">Comment</label>
+                                    <textarea name="comment" id="comment" placeholder="add comment.."
+                                        class="bg-transparent form-control w-100 text-light rounded-0" rows="2" required></textarea>
+                                </div>
+                                <button class="btn btn-light w-25 text-lowercase rounded-0" type="submit" id="liveToastBtn">Send!</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- #endregion Contact -->
+             
+            <!-- #region Toast -->
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="liveToast" class="toast text-light bg-blur bg-black bg-opacity-50 border rounded-0 border-light" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header bg-primary bg-opacity-75 rounded-0">
+                        <strong class="me-auto text-light">Congratulations!</strong>
+                        <button type="button" class="btn-close" data-bs-theme="dark" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        Your comment has been successfully sent somewhere to the void :D
+                    </div>
+                </div>
+            </div>
+            <!-- #endregion Toats -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const form = document.getElementById('contact-form')
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLive = document.getElementById('liveToast')
+
+        form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                document.getElementById('email').value = '';
+                document.getElementById('comment').value = '';
+
+                const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLive)
+                toastBootstrap.show()
+            })  
+    </script>
+
+</body>
+</html>
