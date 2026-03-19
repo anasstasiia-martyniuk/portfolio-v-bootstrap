@@ -1,3 +1,59 @@
 .bg-blur{ backdrop-filter: blur(3.4px); -webkit-backdrop-filter: blur(3.4px);} 
+
+.container-cube {
+    perspective: 1400px;
+    perspective-origin: top right;
+}
+
+.cube-big {
+    width: 370px;
+    height: 370px;
+    transform-style: preserve-3d;
+}
+
+.cube-small {
+    width: 240px;
+    height: 240px;
+}
+
+.back-big {
+    transform: translateX(8px) translateZ(-198px) scaleX(-1);
+}
+.back-small {
+    transform: translateX(8px) translateZ(-120px) scaleX(-1) translateY(64px);
+}
+
+.right-big {
+    transform: rotateY(-90deg) translateY(0px) translateZ(180px) scaleX(-1);
+}
+
+.right-small {
+    transform: rotateY(-90deg) translateY(64px) translateX(8px) translateZ(115px) scaleX(-1);
+}
+
+.bottom-big {
+    transform: rotateX(-90deg) translateX(7px) translateZ(190px) scaleX(-1);
+}
+
+.window-big{
+    width: 240px;
+    height: 220px;
+    rotate: -90deg;
+}
+
+.window-small{
+    width: 155px;
+    height: 140px;
+    right: 20px;
+}
+
+.table-class-big {
+    transform: translateZ(-120px) translateX(20px) translateY(30px);
+}
+
+.table-class-small {
+    transform: translateZ(-120px) translateX(10px) translateY(80px);
+}
+
 .img-hover{ filter: grayscale(100%) blur(4px); transition: 0.3s linear; cursor: pointer;} .img-hover:hover { filter: grayscale(0) blur(0);} .text-hover{transition: 0.3s linear;} .img-hover:hover + .text-hover {opacity: 0; } 
 textarea{resize: none;} .card-tab.active{background-color:#212529 !important; border: none;} .form-control::placeholder {color: rgb(255, 255, 255); opacity: 0.5;}
