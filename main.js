@@ -1,10 +1,9 @@
-// responsive carousel-cube
 function classChanges() {
-    if(window.innerWidth <= 766){
+    if (window.innerWidth <= 766) {
+        
         document.getElementById('layer-1').classList.add('cube-small');
         document.getElementById('layer-2').classList.add('cube-small');
 
-        // переробити на ерей з назвами класів та подвійний цикл
         for (let i = 0; i < document.getElementsByClassName('back-big').length; i++){
             document.getElementsByClassName('back-big')[i].classList.add('back-small');
         }
@@ -44,31 +43,6 @@ function classChanges() {
 }
 addEventListener("resize", (event) => { classChanges(); })
 if (window.innerWidth <= 766) { classChanges() }
-
-//soft skills
-const flashlight = document.getElementById('flashlight');
-const softSkills = document.getElementById('soft-skills');
-
-window.addEventListener('click', (e) => {
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
-
-    var rect = softSkills.getBoundingClientRect();
-    const softSkillsX = rect.left + rect.width / 2;
-    const softSkillsY = rect.bottom + rect.height / 2;
-
-    const angleDev = angle(mouseX, mouseY, softSkillsX, softSkillsY);
-
-    flashlight.style.transform = `rotate(${90 + angleDev}deg)`;
-})
-
-function angle(cx, cy, ex, ey) {
-    const dy = ey - cy;
-    const dx = ex - cx;
-    const rad = Math.atan2(dy, dx);
-    const deg = rad * 180 / Math.PI;
-    return deg;
-}
 
 
 // graph
@@ -112,6 +86,7 @@ new Chart(skillsSm, {
     data: data,
     options: options
     });
+
 
 //contact form
 const form = document.getElementById('contact-form')
